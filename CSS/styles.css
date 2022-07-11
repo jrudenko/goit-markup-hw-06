@@ -863,8 +863,8 @@ a {
     left: 50%;
     transform: translate(-50%, -50%);
 
-    min-width: 528px;
-    min-height: 581px;
+    width: 528px;
+    height: 581px;
     background-color: var(--main-page-color);
     padding: 0;
     margin: 0;
@@ -1008,15 +1008,15 @@ a {
 
     margin-top: 20px;
     margin-bottom: 30px;
-    margin-left: 52px;
     width: 425px;
     height: 24px;
-
+    margin-left: 52px;
     font-weight: 400;
-    font-size: 12px;
+    font-size: 14px;
     line-height: 1.17;
     letter-spacing: 0.01em;
-    color: var(--title-text-color);    
+    color: var(--title-text-color); 
+    cursor: pointer ;   
 }
 
 .modal-checkbox-custom {
@@ -1026,7 +1026,7 @@ a {
 
     width: 16px;
     height: 15px;
-    margin-right: 6px;
+    margin-right: 6px;    
     outline: 2px solid var(--primary-text-color);
     outline-offset: -2px;
     border-radius: 2px;
@@ -1037,6 +1037,7 @@ a {
 
 .modal-checkbox-icon {
     fill: var(--main-page-color);
+    
 }
 .modal-checkbox-input:checked + .modal-checkbox-custom {
     background-color: var(--accent-color);
@@ -1052,12 +1053,17 @@ a {
 }
 .modal-checkbox-agreement {
     user-select: none;
+    
 }
 .modal-submit {  
     margin-left: 165px;
     letter-spacing: 0.06em;    
     width: 200px;
-    height: 50px;  
+    height: 50px;
+    
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
     
     background: var(--accent-color);
     outline: var(--accent-color);
